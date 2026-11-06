@@ -1,0 +1,8 @@
+<div class="container mt-4">
+  <h1>Cine Chungo</h1>
+  <div class="list-group mt-4">
+    @for (e of arrPeliculas; track $index) {
+      <app-pelicula-component [pelicula]="e" [index]="$index"></app-pelicula-component>
+    }
+  </div>
+</div>

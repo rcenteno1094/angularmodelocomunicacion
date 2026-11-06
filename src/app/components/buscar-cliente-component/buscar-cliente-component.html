@@ -1,0 +1,13 @@
+<form #form="ngForm">
+  <select name="selectvalue" #selectvalue>
+    @for (e of arrCliente; track e.idcliente) {
+      <option value="{{ e.idcliente }}">{{ e.nombre }}</option>
+    }
+  </select>
+  <button type="button" (click)="handleSearchBar()">Buscar Info</button>
+  @if (cliente) {
+    <h2>{{ cliente.nombre }}</h2>
+    <p>{{ cliente.paginaweb }}</p>
+    <img [src]="cliente.imagencliente" width="150" />
+  }
+</form>

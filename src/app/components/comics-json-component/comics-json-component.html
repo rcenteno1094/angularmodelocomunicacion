@@ -1,0 +1,8 @@
+<h2>Comics Simple</h2>
+<button (click)="mostrarComics()">Cargar comics</button>
+@for (e of arrComics; track arrComics) {
+  <div>
+    <p>{{ e.titulo }}</p>
+    <img src="{{ e.imagen }}" alt="rip bozo" style="height: 250px" />
+  </div>
+}

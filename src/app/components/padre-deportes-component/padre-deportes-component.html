@@ -1,0 +1,8 @@
+<h2>Padre deportes</h2>
+<p>{{ msg }}</p>
+@for (e of arrDeportes; track $index) {
+  <app-hijo-deporte-component
+    [sport]="e"
+    (seleccionarFavorito)="seleccionarFavorito($event)"
+  ></app-hijo-deporte-component>
+}

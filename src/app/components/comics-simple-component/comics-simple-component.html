@@ -1,0 +1,13 @@
+<h2>Comics Simple</h2>
+<h3>Titulo: {{ comic.titulo }}</h3>
+<img src="{{ comic.imagen }}" alt="rip bozo" style="height: 250px" />
+<p>Descripción: {{ comic.descripcion }}</p>
+
+<button (click)="mostrarComics()">Cargar comics</button>
+
+@for (e of arraycomics; track arraycomics) {
+  <div>
+    <p>{{ e.titulo }}</p>
+    <img src="{{ e.imagen }}" alt="rip bozo" style="height: 250px" />
+  </div>
+}

@@ -1,0 +1,6 @@
+<div class="container">
+  <h2>Libreria chunga</h2>
+  @for (e of arrComics; track $index) {
+    <app-comic-component [comic]="e"></app-comic-component>
+  }
+</div>
